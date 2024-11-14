@@ -1,0 +1,37 @@
+
+.aidefault5-wrapper {
+  background-color: #002855; /* Dark blue background color */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 70px; /* Adjust height to be taller */
+  padding: 0 20px; /* Adjust padding to horizontal only */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.aidefault5-wrapper > .aidefault5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text alignment */
+  color: #ffffff; /* White text color */
+  font-weight: bold; /* Bold text */
+}
+
+.aidefault5-wrapper > .aidefault5 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Ensure elements inside are side by side */
+}
+
+.aidefault5-wrapper > .aidefault5 h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 1rem; /* Adjust font size to match original */
+  line-height: 1.5; /* Adjust line height to match original */
+}
+
+.aidefault5-container > .aidefault5-wrapper {
+  padding: 0;
+  max-width: unset;
+}

@@ -1,0 +1,46 @@
+
+.aidefault4-wrapper {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.aidefault4-wrapper > .aidefault4 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure full width */
+}
+
+.aidefault4-wrapper > .aidefault4 > div {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: row; /* Ensure side-by-side layout */
+}
+
+.aidefault4-wrapper > .aidefault4 > div > .button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: row; /* Ensure side-by-side layout */
+}
+
+.aidefault4-wrapper > .aidefault4 > div > .button-container > p {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.aidefault4-wrapper > .aidefault4 > div > .button-container > p > .button {
+  display: inline-block;
+  background-color: #0046ad; /* Darker blue background color */
+  color: #ffffff; /* White text color */
+  padding: 15px 30px; /* Increased padding for larger button */
+  border-radius: 25px; /* Rounded corners */
+  text-align: center; /* Center text horizontally */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold; /* Bold text */
+  text-decoration: none; /* Remove underline from link */
+  font-size: 16px; /* Font size */
+}

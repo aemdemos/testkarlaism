@@ -1,0 +1,69 @@
+.aicolumns3-container > .aicolumns3-wrapper {
+  padding: 0;
+  max-width: unset;
+}
+
+.aicolumns3-wrapper > .aicolumns3 {
+  display: flex;
+}
+
+.aicolumns3-wrapper > .aicolumns3 > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.aicolumns3-wrapper > .aicolumns3 > div > div {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 40px; /* Increased top padding */
+  color: white;
+  box-sizing: border-box;
+}
+
+.aicolumns3-wrapper > .aicolumns3 img {
+  display: none; /* Hide the img tag since we're using background images */
+}
+
+.aicolumns3-wrapper > .aicolumns3 > div > div:first-child {
+  background-image: url('./media_17f973c9f8db366c1b4be048a2c081e6df4028166.jpeg');
+}
+
+.aicolumns3-wrapper > .aicolumns3 > div > div:last-child {
+  background-image: url('./media_13b171d1e766274c64c22a9910605b641d4cc94d9.jpeg');
+}
+
+.aicolumns3-wrapper > .aicolumns3 p, .aicolumns3-wrapper > .aicolumns3 h2 {
+  margin: 10px 0; /* Adjusted margin for better spacing */
+}
+
+.aicolumns3-wrapper > .aicolumns3 .button-container {
+  margin-top: 20px; /* Adjusted margin */
+  align-self: flex-start; /* Ensure the button is aligned with the text */
+}
+
+.aicolumns3-wrapper > .aicolumns3 .button {
+  display: inline-block;
+  padding: 15px 30px; /* Adjusted padding */
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2em; /* Adjusted font size */
+}
+
+@media (min-width: 900px) {
+  .aicolumns3-wrapper > .aicolumns3 > div {
+    flex-direction: row;
+  }
+  
+  .aicolumns3-wrapper > .aicolumns3 > div > div {
+    height: 100%;
+  }
+}

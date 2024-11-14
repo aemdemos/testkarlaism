@@ -1,0 +1,54 @@
+
+.aicolumns1-wrapper > .aicolumns1.block.aicolumns1-2-cols > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px; /* Increase padding around the container */
+}
+
+.aicolumns1-wrapper > .aicolumns1.block.aicolumns1-2-cols > div > div {
+    margin: 0 20px; /* Margin between columns */
+}
+
+/* Adjust widths to match the original image */
+.aicolumns1-wrapper > .aicolumns1.block.aicolumns1-2-cols > div > div:first-child {
+    flex: 0 0 30%; /* Left section takes 30% width */
+}
+
+.aicolumns1-wrapper > .aicolumns1.block.aicolumns1-2-cols > div > div:last-child {
+    flex: 0 0 65%; /* Right section takes 65% width */
+}
+
+.aicolumns1-wrapper > .aicolumns1.block.aicolumns1-2-cols h2 {
+    font-weight: 400; /* Lighter font weight for the headline */
+}
+
+.aicolumns1-wrapper > .aicolumns1.block.aicolumns1-2-cols .button-container {
+    margin-top: 30px; /* Increase space above button */
+}
+
+.aicolumns1-wrapper > .aicolumns1.block.aicolumns1-2-cols .button {
+    background-color: #0056b3; /* Blue background */
+    color: #ffffff; /* White text */
+    padding: 15px 25px; /* Increase button padding */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* More rounded corners */
+    display: inline-block;
+    text-align: center; /* Center text */
+    font-weight: normal; /* Lighter font weight */
+    font-size: 16px; /* Adjust font size for better spacing */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .aicolumns1-wrapper > .aicolumns1.block.aicolumns1-2-cols > div {
+        flex-direction: column; /* Stack vertically */
+        align-items: flex-start; /* Align items to start */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .aicolumns1-wrapper > .aicolumns1.block.aicolumns1-2-cols > div > div {
+        margin: 10px 0; /* Margin between stacked columns */
+    }
+}

@@ -1,0 +1,53 @@
+
+.aicards1-wrapper > .aicards1 > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px; /* Adjust spacing between grid items */
+}
+
+.aicards1-wrapper > .aicards1 > ul > li {
+  position: relative; /* To position the overlay absolutely */
+  flex: 0 1 calc(25% - 10px); /* Each item takes approximately 25% width minus the gap */
+  margin: 0; /* Remove margin to ensure consistent spacing */
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  display: flex;
+  flex-direction: column; /* Ensure the image and text are stacked */
+}
+
+.aicards1-wrapper > .aicards1 .aicards1-card-image {
+  flex: 1 0 auto; /* Ensure the image takes the remaining space */
+  line-height: 0;
+}
+
+.aicards1-wrapper > .aicards1 > ul > li img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.aicards1-wrapper > .aicards1 .aicards1-card-body {
+  position: absolute; /* Position overlay */
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  color: white;
+  text-align: center;
+  padding: 10px 0; /* Adjust padding as needed */
+  margin: 0; /* Remove margin */
+}
+
+.aicards1-wrapper > .aicards1 .aicards1-card-body p {
+  margin: 0; /* Remove default margin */
+}
+
+.aicards1-wrapper > .aicards1 .aicards1-card-body a.button {
+  background: none; /* Remove button background */
+  color: inherit; /* Inherit text color */
+  text-decoration: none; /* Remove underline */
+  padding: 0; /* Remove button padding */
+}

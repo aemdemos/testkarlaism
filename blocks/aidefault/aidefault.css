@@ -1,0 +1,39 @@
+
+.aidefault-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust height as necessary */
+  background-color: #2e3a40; /* Dark background color */
+}
+
+.aidefault-wrapper > .aidefault.block > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Ensure elements are side by side */
+  height: 100%; /* Ensure it takes the full height of the wrapper */
+  width: 100%; /* Ensure it takes the full width of the wrapper */
+}
+
+.aidefault-wrapper > .aidefault.block > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Ensure elements are side by side */
+  height: 100%; /* Ensure it takes the full height of the parent */
+  width: 100%; /* Ensure it takes the full width of the parent */
+}
+
+.aidefault-wrapper > .aidefault.block h2 {
+  color: #ffffff; /* White text color */
+  font-size: 28px; /* Adjusted font size to match the original */
+  font-weight: normal; /* Set font weight to normal */
+  margin: 0; /* Remove default margins */
+  text-align: center; /* Center the text horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures perfect horizontal alignment */
+  height: 100%; /* Ensures perfect vertical alignment */
+}

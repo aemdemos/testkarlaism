@@ -1,0 +1,38 @@
+
+.aidefault2-wrapper {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100px; /* Adjust as needed */
+    background-color: #f2f2f2; /* Light gray background color */
+}
+
+.aidefault2 {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100%; /* Ensures the block takes up the full height of the container */
+    flex-direction: row; /* Ensures elements are side by side */
+}
+
+.aidefault2 > div {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100%; /* Ensures the inner div takes up the full height of the parent container */
+    flex-direction: row; /* Ensures elements are side by side */
+}
+
+.aidefault2 h2 {
+    font-size: 24px; /* Adjust as needed */
+    color: #333; /* Dark gray text color */
+    margin: 0; /* Remove default margin */
+    font-weight: 400; /* Adjust the font weight to match the original image */
+    display: flex;
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    height: 100%; /* Ensures the heading takes up the full height of the parent container */
+    line-height: 1; /* Reset line height to default */
+    text-align: center; /* Ensure text is centered within the h2 element */
+    width: 100%; /* Ensures the heading takes up the full width of the parent container */
+}

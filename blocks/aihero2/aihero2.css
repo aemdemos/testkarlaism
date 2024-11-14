@@ -1,0 +1,86 @@
+
+/* Wrapper for the entire block */
+.aihero2-wrapper {
+  max-width: unset;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* The main block containing the image and content */
+.aihero2.block {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  width: 100%;
+  background-color: #fff; /* Background color for the text section */
+  position: relative;
+}
+
+/* Top Section - Video Banner */
+.aihero2.block > div:first-child {
+  width: 100%;
+  position: relative;
+}
+
+/* Image inside the top section */
+.aihero2.block > div:first-child picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.aihero2.block > div:first-child img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Overlay on the video banner */
+.aihero2.block > div:first-child::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjusted semi-transparent overlay for better readability */
+  z-index: 1;
+}
+
+/* Centered Play Button */
+.aihero2.block > div:first-child::before {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #fff;
+  z-index: 2;
+}
+
+/* Bottom Section - Text Content */
+.aihero2.block > div:last-child {
+  width: 80%;
+  max-width: 800px;
+  margin: -120px auto 0; /* Pull up the text section to overlap with the video more */
+  background: #fff; /* White background for the text section */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for separation */
+  z-index: 3; /* Ensure it is above the video overlay */
+  position: relative;
+}
+
+/* Text content styling */
+.aihero2.block > div:last-child p:first-child {
+  font-size: 0.875rem;
+  color: #0072ce; /* Example color for the title */
+  margin-bottom: 10px;
+}
+
+.aihero2.block > div:last-child p:last-child {
+  font-size: 1.125rem;
+  color: #333;
+  margin: 0;
+}

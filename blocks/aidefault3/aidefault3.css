@@ -1,0 +1,33 @@
+
+.aidefault3-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 100px; /* Example height, adjust as needed */
+}
+
+.aidefault3 {
+    display: flex;
+    flex-direction: row; /* Ensures elements are side-by-side */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    width: 100%; /* Ensures the block takes full width of the container */
+}
+
+.aidefault3 > div {
+    display: flex;
+    flex-direction: row; /* Ensures elements are side-by-side */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    width: 100%; /* Ensures the div takes full width of the container */
+}
+
+.aidefault3 h2 {
+    font-size: 4em; /* Slightly increased font size to better match the original image */
+    font-weight: 400; /* Set font weight to normal to match the original image */
+    font-family: var(--heading-font-family); /* Uses the heading font family from root styles */
+    text-align: center; /* Centers the text within the div */
+    line-height: 1.1; /* Adjusted line-height for better vertical alignment */
+    letter-spacing: normal; /* Removed letter spacing adjustment for consistency */
+    margin: 0; /* Ensure there is no margin around the heading */
+}

@@ -1,1 +1,31 @@
-/* no fonts found */
+@font-face {
+    font-family: "effra";
+    src: url("../fonts/e_w_rg.woff2") format("woff2");
+    font-display: auto;
+    font-style: normal;
+    font-weight:400
+}
+
+@font-face {
+    font-family: "effra";
+    src: url("../fonts/e_w_bd.woff2") format("woff2");
+    font-display: auto;
+    font-style: normal;
+    font-weight:700
+}
+
+@font-face {
+    font-family: "effra";
+    src: url("../fonts/e_w_lt.woff2") format("woff2");
+    font-display: auto;
+    font-style: normal;
+    font-weight:300
+}
+
+@font-face {
+    font-family: "effra";
+    src: url("../fonts/e_w_md.woff2") format("woff2");
+    font-display: auto;
+    font-style: normal;
+    font-weight:500
+}

@@ -1,0 +1,72 @@
+
+/* Ensure the wrapper takes up full width */
+.aicards2-wrapper {
+    width: 100%;
+    padding: 20px 0; /* Add padding to match original image */
+}
+
+/* Change ul to flex container */
+.aicards2-wrapper > .aicards2 > ul {
+    display: flex;
+    flex-direction: row; /* Ensure items are side by side */
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* Style each card */
+.aicards2-wrapper > .aicards2 > ul > li {
+    flex: 1; /* Ensure all cards take equal space */
+    margin: 0 10px; /* Add some spacing between cards */
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+}
+
+/* Ensure the images take the full width of the card without fixed aspect ratio */
+.aicards2-wrapper > .aicards2 > ul > li .aicards2-card-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style the card body */
+.aicards2-wrapper > .aicards2 > ul > li .aicards2-card-body {
+    padding: 10px;
+    background-color: #f0f0f0; /* Light grey background */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    flex: 1;
+}
+
+/* Style the text elements */
+.aicards2-wrapper > .aicards2 > ul > li .aicards2-card-body p {
+    margin: 5px 0;
+    text-align: left;
+    font-size: var(--body-font-size-s); /* Adjust font size */
+}
+
+/* Remove button styling */
+.aicards2-wrapper > .aicards2 > ul > li .aicards2-card-body .button-container .button {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+    background-color: transparent; /* Remove button styling */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+    border-radius: 0; /* Remove border radius */
+    white-space: normal; /* Ensure text wraps */
+    display: inline; /* Ensure button text flows as inline text */
+}
+
+/* Specific styles for category and date */
+.aicards2-wrapper > .aicards2 > ul > li .aicards2-card-body p:first-of-type {
+    font-weight: bold;
+    color: blue;
+    font-size: var(--body-font-size-xs); /* Match font size */
+}

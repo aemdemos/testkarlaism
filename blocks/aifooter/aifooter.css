@@ -1,0 +1,127 @@
+
+/* Ensure the hero spans the entire width of the page */
+.aifooter-wrapper, footer > .footer > div {
+  max-width: unset;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* The main block containing the image and content */
+.aifooter.block {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  background: url('/media_175a9a61e83198f0e6fe716ec05a660f617b7fe6b.jpeg?width=750&format=jpeg&optimize=medium') center/cover no-repeat; /* Use the background image */
+  padding: 20px;
+  position: relative;
+}
+
+/* Hide the extra div with the image */
+.aifooter.block > div:first-child {
+  display: none;
+}
+
+/* Content area */
+.aifooter.block > div:last-child {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for better readability */
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+/* Navigation Links */
+.aifooter.block ul {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  justify-content: center; /* Center align the navigation links */
+  padding: 0;
+  margin: 10px 0;
+  list-style: none;
+}
+
+.aifooter.block ul li {
+  margin: 0 15px;
+}
+
+.aifooter.block ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.aifooter.block ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.aifooter.block ul:nth-of-type(2) {
+  justify-content: center; /* Center align the social media icons */
+}
+
+.aifooter.block ul:nth-of-type(2) li {
+  margin: 0 10px; /* Adjust spacing for better alignment */
+}
+
+/* Button Container */
+.aifooter.block .button-container {
+  display: flex;
+  justify-content: center; /* Center the button */
+  margin: 20px 0;
+}
+
+.aifooter.block .button {
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+
+/* Icon Style */
+.aifooter.block picture img {
+  width: 24px; /* Set a standard size for icons */
+  height: auto;
+}
+
+/* Footer Links at the Bottom */
+.aifooter.block ul:last-of-type {
+  display: flex;
+  justify-content: center; /* Align links to the center */
+  padding-top: 10px;
+}
+
+.aifooter.block ul:last-of-type li {
+  margin: 0 15px;
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 900px) {
+  .aifooter.block {
+    flex-direction: row; /* Side by side layout for larger screens */
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .aifooter.block > div:last-child {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+  }
+
+  .aifooter.block ul {
+    justify-content: center; /* Center align the navigation links */
+  }
+
+  .aifooter.block ul:nth-of-type(2) {
+    justify-content: center; /* Center align the social media icons */
+  }
+
+  .aifooter.block .button-container {
+    justify-content: center; /* Center the button */
+  }
+}
